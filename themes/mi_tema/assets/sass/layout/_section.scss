@@ -1,0 +1,333 @@
+section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3rem;
+    &__container {
+        display: flex;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.section__tips {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(240, 128, 128, 0.5)
+}
+
+.section__tips_img:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text1 {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section__tips_boton {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section__images_boton {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section__form {
+    width: 100%;
+    max-width: 80%;
+}
+
+@media (min-width: 370px) {
+    .setion {
+        width: 100%;
+    }
+    .section__tips {
+        left: 40px;
+    }
+}
+
+@media (min-width: 580px) {
+    .section {
+        width: 100%;
+        &__container {
+            display: flex;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .section__tips {
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        left: 0;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(240, 128, 128, 0.5)
+    }
+    .section__tips_img:hover .overlay {
+        opacity: 1;
+    }
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .text1 {
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .section__tips_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section__images_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.section__images_page {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .section {
+        width: 100%;
+        &__container {
+            display: flex;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .section__tips {
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(240, 128, 128, 0.5)
+    }
+    .section__tips_img:hover .overlay {
+        opacity: 1;
+    }
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .text1 {
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .section__tips_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section__images_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 100%;
+        &__container {
+            display: flex;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .section__tips {
+        position: relative;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(240, 128, 128, 0.5)
+    }
+    .section__tips_img:hover .overlay {
+        opacity: 1;
+    }
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .text1 {
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .section__tips_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section__images_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section {
+        width: 100%;
+        &__container {
+            display: flex;
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+    .section__tips {
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        left: 0;
+    }
+    .section__tips_img {
+        width: 800px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(240, 128, 128, 0.5)
+    }
+    .section__tips_img:hover .overlay {
+        opacity: 1;
+    }
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .text1 {
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .section__tips_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .section__images_boton {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}

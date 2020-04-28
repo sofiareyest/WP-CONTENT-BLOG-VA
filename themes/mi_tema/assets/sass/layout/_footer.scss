@@ -1,0 +1,26 @@
+.footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: $white;
+    margin: 1rem;
+    border-top: 1px solid $nickel;
+    &__container {
+        display: flex;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    &__logo {
+        height: auto;
+        overflow: hidden;
+        font-family: $pacifico;
+        font-weight: 400;
+    }
+}
+
+.footer__icono_item {
+    color: $black;
+}

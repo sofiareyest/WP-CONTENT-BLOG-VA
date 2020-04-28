@@ -1,0 +1,33 @@
+//Esquema de colores 
+//Primer esquema de color 
+$white: #FFF;
+$platinum: #E8E8E8;
+$light-gray: #D1D1D1;
+// Segundo esquema de color 
+$light-coral: #F08080;
+$salmon: #FA8072;
+$light-salmon: #FFA07A;
+// Tercer esquema de color
+$raisin-black: #222323;
+$nickel: #6C6E70;
+//Tipografia 
+$kalam: 'Kalam',
+cursive;
+$pacifico: 'Pacifico',
+cursive;
+$sanspro: 'Source Sans Pro',
+sans-serif;
+// Peso de fuentes
+$light: 300;
+$regular: 400;
+$bold: 700;
+// Tamaño de fuentes
+$xx-large: 70px;
+$x-large: 30px;
+$large: 18px;
+$medium: 16px;
+$small: 12px;
+//breakpoints//
+$min-large: 1200px;
+$min-laptop: 992px;
+$min-tablet: 768px;

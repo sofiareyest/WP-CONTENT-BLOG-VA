@@ -1,0 +1,44 @@
+.btn-principal {
+    color: $light-gray;
+    background-color: $white;
+    font-family: $sanspro;
+    font-weight: $regular;
+    font-size: $large;
+    padding: 1px 5px;
+    margin: 0;
+    border: 1px solid $salmon;
+    &:hover {
+        background-color: $platinum;
+        color: $nickel;
+    }
+}
+
+.btn-secundario {
+    color: $raisin-black;
+    background-color: $salmon;
+    font-family: $sanspro;
+    font-weight: $bold;
+    font-size: $medium;
+    padding: 4px 15px;
+    margin: 1;
+    border: 1px solid $light-gray;
+    &:hover {
+        background-color: $light-gray;
+        color: $light-coral;
+    }
+}
+
+.btn-tercero {
+    color: $raisin-black;
+    background-color: $platinum;
+    font-family: $sanspro;
+    font-weight: $bold;
+    font-size: $medium;
+    padding: 4px 15px;
+    margin: 1;
+    border: 1px solid $light-coral;
+    &:hover {
+        background-color: $light-gray;
+        color: $light-coral;
+    }
+}

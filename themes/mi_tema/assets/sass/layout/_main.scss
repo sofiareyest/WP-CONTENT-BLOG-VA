@@ -1,0 +1,82 @@
+           main {
+               width: 100%;
+               height: auto;
+               &__container {
+                   display: flex;
+                   width: 100%;
+                   height: auto;
+                   margin: 0 auto;
+               }
+           }
+           
+           .main__destinos {
+               width: 100%;
+               padding: 2rem;
+           }
+           
+           .main__fotos {
+               max-width: 100%;
+               column-count: 3;
+               column-width: 100%;
+           }
+           
+           .main__fotos_item {
+               width: 90%;
+               margin: 0;
+           }
+           
+           .main__lista {
+               width: 100%;
+               list-style: none;
+           }
+           
+           .main__lista-item {
+               width: 100%;
+           }
+           
+           .main__lista_boton {
+               margin-top: 1.5rem;
+           }
+           
+           .entrada {
+               max-width: 70;
+               margin: 0 auto;
+           }
+           
+           @media (min-width: 370px) {
+               .main__fotos {
+                   width: 100%;
+                   margin: 0 auto;
+               }
+           }
+           
+           @media (min-width: 580px) {
+               .main__fotos {
+                   width: 100%;
+                   margin: 0 auto;
+               }
+           }
+           
+           @media (min-width: 768px) {
+               .main__fotos {
+                   width: 100%;
+                   margin: 0 auto;
+                   top: 125px;
+               }
+           }
+           
+           @media (min-width: 992px) {
+               .main__fotos {
+                   width: 100%;
+                   margin: 0 auto;
+                   top: 40px;
+               }
+           }
+           
+           @media (min-width: 1280px) {
+               .main__fotos {
+                   width: 100%;
+                   margin: 0 auto;
+                   top: 0;
+               }
+           }

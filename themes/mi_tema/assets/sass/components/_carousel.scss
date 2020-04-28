@@ -1,0 +1,31 @@
+.section__images {
+    display: flex;
+    max-width: 80%;
+    height: auto;
+    margin: 2rem;
+    margin-left: 7rem;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+@media (min-width: 370px) {
+    .section__images {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 1px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section__images {
+        display: flex;
+        max-width: 80%;
+        height: auto;
+        margin: 2rem;
+        margin-left: 7rem;
+    }
+}

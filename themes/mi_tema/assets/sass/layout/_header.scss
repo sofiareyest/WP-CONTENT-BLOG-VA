@@ -1,0 +1,212 @@
+header {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background: url('../img/portada.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    object-fit: cover;
+    clip-path: inset(50px 0px 50px 0px);
+    &__container {
+        width: 100%;
+        height: 70vh;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.header__texto {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    z-index: 1;
+    color: $black;
+    font-family: $pacifico;
+}
+
+.header__svg {
+    color: $black;
+    position: absolute;
+    top: 50px;
+}
+
+.roll-in-blurred-left {
+    -webkit-animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite both;
+    animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) infinite both;
+}
+
+@-webkit-keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) rotate(-720deg);
+        transform: translateX(-1000px) rotate(-720deg);
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 370px) {
+    .header {
+        width: 100%;
+        height: 30vh;
+        clip-path: inset(20px 0px 20px 20px);
+        &__container {
+            width: 90%;
+            height: 30vh;
+        }
+    }
+    .header__texto {
+        width: 50%;
+        position: absolute;
+        top: 50px;
+        left: 35px;
+        z-index: 1;
+        color: $black
+    }
+    .header__texto h1 {
+        font-size: 14px;
+    }
+    .header__svg {
+        color: $black;
+        width: 30px;
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media (min-width: 580px) {
+    .header {
+        width: 100%;
+        height: 60vh;
+        clip-path: inset(50px 0px 50px 0px);
+        &__container {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    .header__texto {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        z-index: 1;
+        color: $black
+    }
+    .header__texto h1 {
+        font-size: $medium;
+    }
+    .header__svg {
+        color: $black;
+        width: 50px;
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        width: 100%;
+        height: 70vh;
+        clip-path: inset(50px 0px 50px 0px);
+        &__container {
+            width: 100%;
+            height: 70vh;
+        }
+    }
+    .header__texto {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+        color: $black
+    }
+    .header__texto h1 {
+        font-size: 23px;
+    }
+    .header__svg {
+        color: $black;
+        width: 80px;
+        height: 70px;
+        position: absolute;
+        top: 53px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        width: 100%;
+        height: 70vh;
+        clip-path: inset(50px 0px 50px 0px);
+        &__container {
+            width: 100%;
+            height: 70vh;
+        }
+    }
+    .header__texto {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+        color: $black
+    }
+    .header__texto h1 {
+        font-size: 23px;
+    }
+    .header__svg {
+        color: $black;
+        width: 90px;
+        height: 80px;
+        position: absolute;
+        top: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        width: 100%;
+        height: 70vh;
+        clip-path: inset(50px 0px 50px 0px);
+        &__container {
+            width: 100%;
+        }
+    }
+    .header__texto {
+        position: absolute;
+        top: 150px;
+        left: 250px;
+        z-index: 1;
+        color: $black
+    }
+    .header__svg {
+        color: $black;
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: 50px;
+    }
+}
