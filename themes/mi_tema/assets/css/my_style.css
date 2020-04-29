@@ -9888,7 +9888,6 @@ h3 {
 body {
   margin: 0;
   padding: 0;
-  padding-top: 65px;
   font-family: "Source Sans Pro", sans-serif;
   position: relative;
   scroll-behavior: smooth;
@@ -9898,7 +9897,6 @@ body {
 
 img {
   width: 100%;
-  max-width: 100%;
   height: auto;
 }
 
@@ -9967,7 +9965,7 @@ header {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  background: url("../img/portada.jpg");
+  background: url("../images/PORTADA.jpg");
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
@@ -10292,7 +10290,7 @@ header {
   width: 100%;
   height: 70vh;
   overflow: hidden;
-  background: url("../img/portada.jpg");
+  background: url("../images/PORTADA.jpg");
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
@@ -10508,55 +10506,6 @@ header__container {
     top: 50px;
   }
 }
-.navbar {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  background: #FFF;
-  margin: 1rem;
-  border-bottom: 1px solid #6C6E70;
-}
-.navbar__container {
-  display: flex;
-  width: 100%;
-  max-width: 80%;
-  height: auto;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.navbar__logo {
-  height: auto;
-  overflow: hidden;
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-}
-
-.navbar-toggler-icon span {
-  color: #000;
-}
-
-.navbar-collapse {
-  display: flex;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #E8E8E8;
-  justify-content: center;
-  padding-left: 10rem;
-}
-
-.nav-link {
-  color: #E8E8E8;
-  text-shadow: black;
-  font-weight: 400;
-  font-size: 16px;
-  margin: 0 1.5rem;
-  border: 1px solid #6C6E70;
-  text-decoration: none;
-}
-.nav-link:hover {
-  background-color: #E8E8E8;
-  color: #6C6E70;
-}
-
 section {
   width: 100%;
   height: auto;
