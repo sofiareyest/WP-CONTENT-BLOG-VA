@@ -10,7 +10,7 @@
 function dl_image_sizes( $sizes ) {
 
 	$add_sizes = array(
-		'tips-img'	=> __( 'Tamaño de imagen de los proyectos' ),
+		'entradas-inicio'	=> __( 'Tamaño de imagen de los proyectos' ),
 		'carousel-img'	=> __( 'Tamaño de imagen del Carrusel' ),
 		'entradas'	=> __( 'Tamaño de imagen de las entradas' ),
 		'detail'	=> __( 'Tamaño de imagen de los posts individuales' )
@@ -32,7 +32,7 @@ function dl_image_sizes( $sizes ) {
  */
 if ( function_exists( 'add_theme_support' ) ) {
 
-	add_image_size( 'tips-img', 360, 240, true );
+	add_image_size( 'entradas-inicio', 360, 240, true );
 	add_image_size( 'carousel-img', 800, 500, true );
 	add_image_size( 'entradas', 360, 360, true );
 	add_image_size( 'detail', 720, 360, true );

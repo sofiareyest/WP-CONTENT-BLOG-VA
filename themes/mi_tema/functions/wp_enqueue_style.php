@@ -35,7 +35,8 @@ function dl_enqueue_style() {
 	wp_register_style( 'fontawesome', get_theme_file_uri( '/assets/css/fontawesome.css'), null, '5.6.3', 'screen' );
 	wp_register_style( 'main_style', get_theme_file_uri( '/assets/css/style.css'), $deps, $theme_data->get( 'Version' ), 'screen' );
 	wp_register_style( 'pacifico', 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-	wp_register_style( 'my_fonts', 'href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+	wp_register_style( 'kalam', 'https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+	wp_register_style( 'sanspro', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
 	wp_register_style( 'my_style', get_theme_file_uri( '/assets/css/my_style.css'), $deps, $theme_data->get( 'Version' ), 'screen' );
 
 	/* Enqueue Styles */
@@ -54,7 +55,8 @@ function dl_enqueue_style() {
 	
 	wp_enqueue_style( 'main_style' );
 	wp_enqueue_style( 'pacifico' );
-	wp_enqueue_style( 'my_fonts' );
+	wp_enqueue_style( 'kalam' );
+	wp_enqueue_style( 'sanspro' );
 	wp_enqueue_style( 'my_style' );
 
 }

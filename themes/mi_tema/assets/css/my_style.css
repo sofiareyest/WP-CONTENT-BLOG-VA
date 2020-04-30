@@ -9888,6 +9888,7 @@ h3 {
 body {
   margin: 0;
   padding: 0;
+  padding-top: 2.5rem;
   font-family: "Source Sans Pro", sans-serif;
   position: relative;
   scroll-behavior: smooth;
@@ -9959,6 +9960,16 @@ h4 {
   font-weight: 400;
   font-size: 18px;
   color: #FA8072;
+}
+
+a {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FA8072;
+}
+a:hover {
+  color: #E8E8E8;
 }
 
 header {
@@ -10188,23 +10199,22 @@ main {
 main__container {
   display: flex;
   width: 100%;
-  height: auto;
   margin: 0 auto;
 }
 
 .main__destinos {
-  width: 100%;
   padding: 2rem;
+  width: 100%;
+  height: auto;
 }
 
 .main__fotos {
-  max-width: 100%;
-  column-count: 3;
-  column-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
 }
 
 .main__fotos_item {
-  width: 90%;
   margin: 0;
 }
 
@@ -10228,33 +10238,28 @@ main__container {
 
 @media (min-width: 370px) {
   .main__fotos {
-    width: 100%;
     margin: 0 auto;
   }
 }
 @media (min-width: 580px) {
   .main__fotos {
-    width: 100%;
     margin: 0 auto;
   }
 }
 @media (min-width: 768px) {
   .main__fotos {
-    width: 100%;
     margin: 0 auto;
     top: 125px;
   }
 }
 @media (min-width: 992px) {
   .main__fotos {
-    width: 100%;
     margin: 0 auto;
     top: 40px;
   }
 }
 @media (min-width: 1280px) {
   .main__fotos {
-    width: 100%;
     margin: 0 auto;
     top: 0;
   }
@@ -10269,8 +10274,6 @@ main__container {
 }
 .footer__container {
   display: flex;
-  width: 100%;
-  max-width: 80%;
   height: auto;
   margin: 0 auto;
   overflow: hidden;
@@ -10506,6 +10509,28 @@ header__container {
     top: 50px;
   }
 }
+.navbar {
+  border-bottom: 1px solid #6C6E70;
+}
+
+.navbar-collapse {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6C6E70;
+  padding-left: 17rem;
+}
+
+.navbar__logo {
+  height: auto;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 section {
   width: 100%;
   height: auto;

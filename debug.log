@@ -1,0 +1,101 @@
+[29-Apr-2020 20:25:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/page-inicio.php on line 174
+[29-Apr-2020 23:55:54 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:56:22 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:57:21 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:57:24 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:57:47 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:58:38 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[29-Apr-2020 23:59:48 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[30-Apr-2020 00:00:27 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[30-Apr-2020 00:04:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17
+[30-Apr-2020 00:04:46 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php:17
+Stack trace:
+#0 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(725): require()
+#1 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', false)
+#2 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/header.php(12): get_template_part('_includes/nav', 'bootstrap4')
+#4 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(723): require_once('/Users/sofiarey...')
+#5 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/template.php(672): load_template('/Users/sofiarey...', true)
+#6 /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-includes/general-template.php(41): locate_template(Array, true)
+#7 /Users/sofiare in /Users/sofiareyes/Desktop/desarrollos/BLOG-VA/wp-content/themes/mi_tema/_includes/nav-bootstrap4.php on line 17

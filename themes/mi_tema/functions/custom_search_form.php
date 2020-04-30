@@ -25,7 +25,7 @@ function dl_custom_search_form_bootstrap_4() {
 
 	$form  = '<form class="form-inline my-2 my-lg-0 flex-nowrap" role="search" method="get" action="' . get_bloginfo( 'url' ) . '">';
 	$form .= 	'<input type="search" class="form-control mr-2 w-100" placeholder="Buscador" name="s" value="" aria-label="Search">';
-	$form .= 	'<button type="submit" class="btn btn-outline-success my-2 my-sm-0" aria-label="Buscar"><i class="fas fa-search"></i></button>';
+	$form .= 	'<button type="submit" class="btn btn-outline-dark my-2 my-sm-0" aria-label="Buscar"><i class="fas fa-search"></i></button>';
 	$form .= '</form>';
 
 	return $form;
