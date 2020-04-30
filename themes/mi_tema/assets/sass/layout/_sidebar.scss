@@ -1,22 +1,14 @@
 .sidebar {
-    width: 250px;
+    width: 280px;
     border: 1px solid $nickel;
     padding: 0;
     margin: 0 auto;
     background-color: $light-gray;
-    &__container {
-        width: 100%;
-        overflow: hidden;
-    }
+    display: flex;
 }
 
 .sidebar__nosotros {
-    width: 100%;
     text-align: center;
-}
-
-.sidebar__nosotros_texto {
-    width: 100%;
     &_img {
         border-radius: 50%;
     }

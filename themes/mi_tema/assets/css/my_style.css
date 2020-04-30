@@ -10538,6 +10538,10 @@ section__container {
   width: 100%;
 }
 
+.section__tips_img {
+  width: 100%;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -10559,16 +10563,7 @@ section__container {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.text1 {
-  color: white;
-  position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -10641,16 +10636,7 @@ section__container {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .text1 {
-    color: white;
-    position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -10712,16 +10698,7 @@ section__container {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .text1 {
-    color: white;
-    position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -10779,16 +10756,7 @@ section__container {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .text1 {
-    color: white;
-    position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -10810,7 +10778,7 @@ section__container {
 }
 @media (min-width: 1280px) {
   .section {
-    width: 100%;
+    width: 1280;
   }
   .section__container {
     display: flex;
@@ -10819,15 +10787,14 @@ section__container {
   }
 
   .section__tips {
-    width: 1200px;
-    position: relative;
+    width: 900px;
     margin: 0 auto;
     padding: 0;
     left: 0;
   }
 
   .section__tips_img {
-    width: 800px;
+    width: 900px;
   }
 
   .overlay {
@@ -10851,16 +10818,7 @@ section__container {
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .text1 {
-    color: white;
-    position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -10881,26 +10839,18 @@ section__container {
   }
 }
 .sidebar {
-  width: 250px;
+  width: 280px;
   border: 1px solid #6C6E70;
   padding: 0;
   margin: 0 auto;
   background-color: #D1D1D1;
-}
-.sidebar__container {
-  width: 100%;
-  overflow: hidden;
+  display: flex;
 }
 
 .sidebar__nosotros {
-  width: 100%;
   text-align: center;
 }
-
-.sidebar__nosotros_texto {
-  width: 100%;
-}
-.sidebar__nosotros_texto_img {
+.sidebar__nosotros_img {
   border-radius: 50%;
 }
 
@@ -10956,7 +10906,7 @@ section__container {
 
 .section__images {
   display: flex;
-  max-width: 80%;
+  width: 1000px;
 }
 
 .carousel-inner {
@@ -10974,7 +10924,7 @@ section__container {
 @media (min-width: 1280px) {
   .section__images {
     display: flex;
-    max-width: 80%;
+    width: 1000px;
   }
 }
 .input {

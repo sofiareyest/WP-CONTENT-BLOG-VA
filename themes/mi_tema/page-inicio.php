@@ -63,73 +63,52 @@
     <section class="section">
         <div class="section__container">
             <div class="row">
-                <div class="section__tips col-9  col-xl-9 col-md-12 col-sm-12">
+            <div class="section__tips col-9  col-xl-9 col-md-12 col-sm-12">
                     <h2 class="mb-5">Tips para tus viajes</h2>
                     <div class="row">
-                        <figure class=" col-lg-4 col-xl-4 col-sm-6 section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips1.jpeg" alt="Card image cap" class="">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 1</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
-                        <figure class=" col-lg-4 col-xl-4 col-sm-6 section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips2.jpg" alt="Card image cap">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 2</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="col-lg-4 col-xl-4 col-sm-6 section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips3.jpeg" alt="Card image cap">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 3</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
 
+    <?php $arg = array(
+   'post_type'     => 'tips',
+   'posts_per_page' => 6,
+   'orderby' => 'rand'
+   );
 
-                        <figure class="col-lg-4 col-xl-4 col-sm-6 d-none d-sm-block section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips4.jpeg" alt="Card image cap">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 4</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="col-lg-4 col-xl-4 col-sm-6 d-none d-sm-block section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips5.jpeg" alt="Card image cap">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 5</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="col-lg-4 col-xl-4 col-sm-6 d-none d-sm-block section__tips_img">
-                            <img class="rounded w-100 h-auto" src="assets/img/tips6.jpg" alt="Card image cap">
-                            <figcaption class="overlay">
-                                <h4 class="text">Tips 6</h4>
-                                <p class="text1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            </figcaption>
-                        </figure>
+      $get_arg = new WP_Query( $arg );
+         while ( $get_arg->have_posts() ) {
+      $get_arg->the_post();
+        ?>
 
-                       
-                     <button class="btn-secundario section__tips_boton " href="page-tips.html">VER TODOS LOS TIPS</button>
-                      
-                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                        <?php $arg = array(
-                         'post_type'     => 'slider',
-                          'posts_per_page' => 3
-                          );
-                          $get_arg = new WP_Query( $arg );
-                          while ( $get_arg->have_posts() ) {
-                          $get_arg->the_post();
-                           ?>
-                       <div class="carousel-item <?php if ( $get_arg->current_post == 0 ) : ?>active<?php endif; ?>">
-                        <?php the_post_thumbnail('carousel-img', array('class' => 'd-block w-100 h-auto')); ?>
-                       </div>
-                      <?php } wp_reset_postdata(); ?>
-                     </div>
-                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <figure class="col-lg-4 col-xl-4 col-sm-6 section__tips_img">
+      <?php the_post_thumbnail('entradas-inicio', array('class' => 'image w-100 h-auto')); ?>
+      
+        <figcaption class="overlay">
+          <h4 class="text"><?php the_title(); ?></h4>
+        </figcaption>
+      </figure>
+   
+      <?php } wp_reset_postdata(); ?>
+               
+         <button class="btn-secundario section__tips_boton " href="page-tips.html">VER TODOS LOS TIPS</button>
+               
+         
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+           <div class="carousel-inner">
+
+             <?php $arg = array(
+             'post_type'     => 'slider',
+            'posts_per_page' => 3
+                 );
+                $get_arg = new WP_Query( $arg );
+                while ( $get_arg->have_posts() ) {
+               $get_arg->the_post();
+                ?>
+              <div class="carousel-item <?php if ( $get_arg->current_post == 0 ) : ?>active<?php endif; ?>">
+             <?php the_post_thumbnail('carousel-img', array('class' => 'd-block w-100 h-auto')); ?>
+              </div>
+             <?php } wp_reset_postdata(); ?>
+               </div>
+
+             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
@@ -138,17 +117,12 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                                 <button class="btn-secundario section__images_boton " href="page-fotografias.html">MIRA MÁS FOTOGRAFÍAS</button>
-
                     </div>
-                        
-
-
+                    <?php get_sidebar() ?>
                 </div>
-
-                <?php get_sidebar() ?>
-
-
+               
             </div>
         </div>
     </section>
+
 <?php get_footer() ?>

@@ -33,7 +33,7 @@ function dl_image_sizes( $sizes ) {
 if ( function_exists( 'add_theme_support' ) ) {
 
 	add_image_size( 'entradas-inicio', 360, 240, true );
-	add_image_size( 'carousel-img', 800, 450, true );
+	add_image_size( 'carousel-img', 700, 400, true );
 	add_image_size( 'entradas', 360, 360, true );
 	add_image_size( 'detail', 720, 360, true );
 
