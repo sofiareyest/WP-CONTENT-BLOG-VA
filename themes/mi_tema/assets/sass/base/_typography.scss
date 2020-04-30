@@ -28,13 +28,3 @@ h4 {
     font-size: $large;
     color: $salmon
 }
-
-a {
-    font-family: $kalam;
-    font-weight: $regular;
-    font-size: $large;
-    color: $salmon;
-    &:hover {
-        color: $platinum;
-    }
-}

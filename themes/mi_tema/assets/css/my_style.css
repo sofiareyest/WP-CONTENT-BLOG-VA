@@ -9962,16 +9962,6 @@ h4 {
   color: #FA8072;
 }
 
-a {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-size: 18px;
-  color: #FA8072;
-}
-a:hover {
-  color: #E8E8E8;
-}
-
 header {
   width: 100%;
   height: 70vh;
@@ -10891,47 +10881,32 @@ section__container {
   }
 }
 .sidebar {
-  width: 300px;
+  width: 250px;
   border: 1px solid #6C6E70;
   padding: 0;
+  margin: 0 auto;
   background-color: #D1D1D1;
 }
 .sidebar__container {
   width: 100%;
   overflow: hidden;
 }
-.sidebar__etiquetas {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 0 0.5rem;
-  margin: 0;
-  margin-top: 10rem;
-}
-
-.siderbar__etiquetas_item a {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-size: 30px;
-  color: #FFA07A;
-}
 
 .sidebar__nosotros {
-  width: 250px;
+  width: 100%;
   text-align: center;
-  margin-top: 8rem;
-  margin-left: 2rem;
 }
-.sidebar__nosotros_img {
+
+.sidebar__nosotros_texto {
+  width: 100%;
+}
+.sidebar__nosotros_texto_img {
   border-radius: 50%;
-  margin-top: 2rem;
 }
 
 .siderbar__nosotros_boton {
   text-align: center;
   margin: 0 auto;
-  margin-top: 2rem;
 }
 
 .btn-principal {
@@ -10982,9 +10957,6 @@ section__container {
 .section__images {
   display: flex;
   max-width: 80%;
-  height: auto;
-  margin: 2rem;
-  margin-left: 7rem;
 }
 
 .carousel-inner {
@@ -10995,7 +10967,6 @@ section__container {
   .section__images {
     display: flex;
     width: 100%;
-    height: auto;
     margin: 0 auto;
     margin-top: 1px;
   }
@@ -11004,9 +10975,6 @@ section__container {
   .section__images {
     display: flex;
     max-width: 80%;
-    height: auto;
-    margin: 2rem;
-    margin-left: 7rem;
   }
 }
 .input {

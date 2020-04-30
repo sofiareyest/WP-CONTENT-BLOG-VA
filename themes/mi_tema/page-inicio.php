@@ -111,22 +111,25 @@
                             </figcaption>
                         </figure>
 
-                        <button class="btn-secundario section__tips_boton " href="page-tips.html">VER TODOS LOS TIPS</button>
-
-                        <div class="section__images">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assets/img/foto1.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/foto2.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/img/foto3.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                       
+                     <button class="btn-secundario section__tips_boton " href="page-tips.html">VER TODOS LOS TIPS</button>
+                      
+                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <?php $arg = array(
+                         'post_type'     => 'slider',
+                          'posts_per_page' => 3
+                          );
+                          $get_arg = new WP_Query( $arg );
+                          while ( $get_arg->have_posts() ) {
+                          $get_arg->the_post();
+                           ?>
+                       <div class="carousel-item <?php if ( $get_arg->current_post == 0 ) : ?>active<?php endif; ?>">
+                        <?php the_post_thumbnail('carousel-img', array('class' => 'd-block w-100 h-auto')); ?>
+                       </div>
+                      <?php } wp_reset_postdata(); ?>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
@@ -136,10 +139,8 @@
                                 </a>
                                 <button class="btn-secundario section__images_boton " href="page-fotografias.html">MIRA MÁS FOTOGRAFÍAS</button>
 
-                            </div>
-                        </div>
                     </div>
-
+                        
 
 
                 </div>
