@@ -33,7 +33,7 @@
                 </div>
               
             </div>
-            <a href="<?php echo get_home_url()?>" class="btn-secundario btn-lg mt-5">Volver al inicio</a>
+            <a href="<?php echo get_home_url()?>" class="btn-secundario btn btn-lg mt-5">Volver al inicio</a>
         </div>
 
     </section>

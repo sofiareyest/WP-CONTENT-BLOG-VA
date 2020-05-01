@@ -28,3 +28,21 @@ h4 {
     font-size: $large;
     color: $salmon
 }
+
+.tagcloud {
+    padding: 1rem;
+}
+
+.tagcloud a {
+    font-family: $sanspro;
+    font-weight: $bold;
+    font-size: $x-large;
+    color: $salmon
+}
+
+a {
+    color: $salmon;
+    &:hover {
+        color: $raisin-black;
+    }
+}

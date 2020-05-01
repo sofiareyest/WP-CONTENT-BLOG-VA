@@ -9,7 +9,6 @@
            }
            
            .main__destinos {
-               padding: 2rem;
                width: 100%;
                height: auto;
            }
@@ -30,6 +29,10 @@
            }
            
            .main__lista-item {
+               width: 100%;
+           }
+           
+           .main__destinos_lista {
                width: 100%;
            }
            
@@ -69,8 +72,27 @@
            }
            
            @media (min-width: 1280px) {
-               .main__fotos {
+               .main {
+                   width: 1200px;
                    margin: 0 auto;
-                   top: 0;
+               }
+               .main__destinos {
+                   width: 300px;
+                   margin: 0 auto;
+               }
+               .main__destinos_boton {
+                   margin-top: 1rem;
+                   margin-left: 2rem;
+               }
+               .main__lista {
+                   width: 250px;
+                   margin: 0 auto;
+               }
+               .main__lista-item {
+                   width: 100%;
+               }
+               .main__fotos {
+                   width: 800px;
+                   margin: 0 auto;
                }
            }

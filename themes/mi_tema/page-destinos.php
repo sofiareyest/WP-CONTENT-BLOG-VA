@@ -7,7 +7,7 @@
             <div class="row">
 
                 <div class="main__destinos col-12">
-                    <ul class="main__lista">
+                    <ul class="main__destinos_lista">
                         <h2 class="mt-5 mb-5">Elige tu destino</h2>
 
                         <button class="btn-principal main__lista-item " href="category-africa.html">Africa</button>
@@ -54,7 +54,7 @@
                     <h4><?php the_category(' '); ?></h4>
                     <p><?php the_excerpt(); ?></p>
                       <p><?php the_tags( '<span class="text-orange">#</span>', ' <span class="text-orange">#</span>', '' ); ?></p>
-                     <p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero my-3">Ver entrada</a></p>
+                     <p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero btn my-3">Ver entrada</a></p>
                      </div>
                    
                 
@@ -64,7 +64,7 @@
                 </article>
                 <?php } wp_reset_postdata(); ?>
                 <div>
-     <a href="<?php echo get_home_url()?>" class="btn-secundario btn-lg mt-5">Volver al inicio</a>
+     <a href="<?php echo get_home_url()?>" class="btn-secundario btn btn-lg mt-5">Volver al inicio</a>
    </div>
 
     

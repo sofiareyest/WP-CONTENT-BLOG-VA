@@ -20,9 +20,9 @@
                         <button class="btn-principal main__lista-item " href="#">America del sur</button>
 
                     </ul>
-                    <a href="destinos" class="btn-secundario mb-3 ml-5 mt-5">TODOS LOS DESTINOS</a>
+                    <a href="destinos" class="btn-secundario btn main__destinos_boton">TODOS LOS DESTINOS</a>
                 </div>
-
+              
                 <?php $arg = array(
                 'post_type'     => 'post',
                  'posts_per_page' => 3,
@@ -78,7 +78,7 @@
       
       <?php } wp_reset_postdata(); ?>
                
-         <a href="tips" class="btn-secundario section__images_boton mb-3">VER TODOS LOS TIPS</a>    
+         <a href="tips" class="btn-secundario btn section__images_boton mb-3">VER TODOS LOS TIPS</a>    
          </div>
         <div class="section__images">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -110,7 +110,7 @@
           </div>
          
           </div>
-          <a href="fotografias" class="btn-secundario mb-3 section__images_boton">MIRA MÁS FOTOGRAFÍAS</a>
+          <a href="fotografias" class="btn-secundario btn mb-3 section__images_boton">MIRA MÁS FOTOGRAFÍAS</a>
         </div>
             </div>
             <?php get_sidebar() ?>
