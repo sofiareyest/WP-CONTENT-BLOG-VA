@@ -10324,6 +10324,14 @@ main__container {
   color: #000;
 }
 
+@media (min-width: 1280px) {
+  .footer {
+    width: 1280px;
+  }
+  .footer__container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   height: 70vh;
