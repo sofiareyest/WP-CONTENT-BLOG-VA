@@ -13,27 +13,16 @@
                         <h2>Elige tu destino</h2>
 
                         <button class="btn-principal main__lista-item " href="#">Africa</button>
-
-
                         <button class="btn-principal main__lista-item " href="#">Asia</button>
-
-
                         <button class="btn-principal main__lista-item " href="#">Australia & Oceania</button>
-
-
                         <button class="btn-principal main__lista-item " href="#">Europa</button>
-
-
                         <button class="btn-principal main__lista-item " href="#">America del norte</button>
-
-
                         <button class="btn-principal main__lista-item " href="#">America del sur</button>
 
-                    
-               
                     </ul>
                     <a href="destinos" class="btn-secundario mb-3 ml-5 mt-5">TODOS LOS DESTINOS</a>
                 </div>
+
                 <?php $arg = array(
                 'post_type'     => 'post',
                  'posts_per_page' => 3,
@@ -48,9 +37,7 @@
                 <div class="main__fotos  col-md-3 col-sm-12">
 
                     <div class=" main__fotos_item">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('entradas-inicio', array('class' => 'w-100 h-auto')); ?></a>
-                   
-                    
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('entradas-inicio', array('class' => 'w-100 h-auto')); ?></a>        
                     </div>
                   
                 </div>
@@ -67,30 +54,33 @@
                     <h2 class="mb-5">Tips para tus viajes</h2>
                     <div class="row">
 
-    <?php $arg = array(
-   'post_type'     => 'tips',
-   'posts_per_page' => 6,
-   'orderby' => 'rand'
-   );
+            <div class="section__imagestips">
 
-      $get_arg = new WP_Query( $arg );
-         while ( $get_arg->have_posts() ) {
-      $get_arg->the_post();
-        ?>
+                <?php $arg = array(
+                 'post_type'     => 'tips',
+                 'posts_per_page' => 6,
+                 'orderby' => 'rand'
+                 );
 
-      <figure class="col-lg-4 col-xl-4 col-sm-6 section__tips_img">
-      <?php the_post_thumbnail('entradas-inicio', array('class' => 'image w-100 h-auto')); ?>
+                 $get_arg = new WP_Query( $arg );
+                   while ( $get_arg->have_posts() ) {
+                 $get_arg->the_post();
+                  ?>
+
+             <figure class="col-lg-4 col-xl-4 col-sm-6 section__tips_img">
+              <?php the_post_thumbnail('entradas-inicio', array('class' => 'image w-100 h-auto')); ?>
       
-        <figcaption class="overlay">
-          <h4 class="text"><?php the_title(); ?></h4>
-        </figcaption>
-      </figure>
-   
+               <figcaption class="overlay">
+              <a href="<?php the_permalink(); ?>"><h4 class="text"><?php the_title(); ?></h4></a>
+          
+             </figcaption>
+             </figure>
+      
       <?php } wp_reset_postdata(); ?>
                
-         <button class="btn-secundario section__tips_boton " href="page-tips.html">VER TODOS LOS TIPS</button>
-               
-         
+         <a href="tips" class="btn-secundario section__images_boton mb-3">VER TODOS LOS TIPS</a>    
+         </div>
+        <div class="section__images">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
            <div class="carousel-inner">
 
@@ -109,19 +99,21 @@
                </div>
 
              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                                <button class="btn-secundario section__images_boton " href="page-fotografias.html">MIRA MÁS FOTOGRAFÍAS</button>
-                    </div>
-                    <?php get_sidebar() ?>
-                </div>
-               
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+                 </a>
+                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+                                
+          </div>
+         
+          </div>
+          <a href="fotografias" class="btn-secundario mb-3 section__images_boton">MIRA MÁS FOTOGRAFÍAS</a>
+        </div>
             </div>
+            <?php get_sidebar() ?>
         </div>
     </section>
 

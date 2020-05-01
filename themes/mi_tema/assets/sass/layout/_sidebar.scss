@@ -1,20 +1,22 @@
 .sidebar {
-    width: 280px;
+    width: 250px;
     border: 1px solid $nickel;
     padding: 0;
     margin: 0 auto;
     background-color: $light-gray;
-    display: flex;
 }
 
 .sidebar__nosotros {
     text-align: center;
+    margin-top: 5rem;
+    padding: 1rem;
     &_img {
         border-radius: 50%;
     }
 }
 
-.siderbar__nosotros_boton {
+.sidebar__nosotros_boton {
     text-align: center;
     margin: 0 auto;
+    margin-top: 7rem;
 }

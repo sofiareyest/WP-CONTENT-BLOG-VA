@@ -15,8 +15,11 @@ section {
     width: 100%;
 }
 
-.section__tips_img {
-    width: 100%;
+.section__imagestips {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .overlay {
@@ -63,6 +66,10 @@ section {
 .section__form {
     width: 100%;
     max-width: 80%;
+}
+
+.form-group label {
+    color: $salmon;
 }
 
 @media (min-width: 370px) {
@@ -240,7 +247,7 @@ section {
 
 @media (min-width: 1280px) {
     .section {
-        width: 1280;
+        width: 1280px;
         &__container {
             display: flex;
             height: auto;
@@ -248,14 +255,10 @@ section {
         }
     }
     .section__tips {
-        width: 900px;
-        // position: relative;
+        width: 1280px;
         margin: 0 auto;
         padding: 0;
         left: 0;
-    }
-    .section__tips_img {
-        width: 900px;
     }
     .overlay {
         position: absolute;
@@ -292,5 +295,8 @@ section {
         margin: 0 auto;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
+    }
+    .label {
+        color: $salmon;
     }
 }

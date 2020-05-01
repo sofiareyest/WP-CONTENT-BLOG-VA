@@ -1,12 +1,16 @@
 <?php get_header() ?>
+<?php the_post() ?>
 
 <section class="section">
+<h2 class="text-center mb-5 mt-5"><?php the_title() ?></h2>
         <div class="section__container">
+      
             <div class="row">
+           
                 <div class="row col-12  my-4 mb-4">
-
+            
                     <div class="col-md-5  ">
-                        <img src="assets/img/nosotros.jpeg" alt="nosotros" class="">
+                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/nosotros.jpeg" alt="nosotros" class="">
                     </div>
                     <div class=" col-md-7 mt-4">
 
@@ -19,35 +23,14 @@
 
                 </div>
                 <div class="nosotros__form col-12 mb-4">
-                    <h2>Contáctenos</h2>
-                    <form action="enviar.php" method="post" name="contacto" id="contacto">
-                        <fieldset class="fielset">
-
-
-                            <p>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" name="nombre" placeholder="Ingresar tu nombre" class="input">
-
-                            </p>
-                            <p>
-                                <label for="mail">Mail:</label>
-                                <input type="mail" name="mail" placeholder="Ingresar tu mail" class="input">
-
-                            </p>
-
-                            <p>
-                                <label for=" asunto ">Asunto:</label>
-                                <input type="text " name="asunto " placeholder="Asunto" class="input">
-
-                            </p>
-
-                            <label for=" mensaje ">Mensaje:</label><br />
-                            <textarea name="mensaje " id="mensaje " cols="20 "></textarea><br />
-
-                            <button class="btn-tercero mt-4" href="#">Enviar</button>
-
-                    </form>
-                    </fieldset>
+                <div class="my-5 container">
+                <h2 class="text-center mb-5 mt-5">Contáctanos</h2>
+      
+        <?php the_content(); ?>
+        <?php if ( is_active_sidebar( 'contact-widget' ) ) { ?>
+            <?php dynamic_sidebar( 'contact-widget' ); ?>
+        <?php }; ?>
+      </div>
                 </div>
 
             </div>

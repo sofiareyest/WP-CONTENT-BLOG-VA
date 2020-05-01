@@ -8,7 +8,7 @@
 
                 <div class="main__destinos col-12">
                     <ul class="main__lista">
-                        <h2>Elige tu destino</h2>
+                        <h2 class="mt-5 mb-5">Elige tu destino</h2>
 
                         <button class="btn-principal main__lista-item " href="category-africa.html">Africa</button>
 
