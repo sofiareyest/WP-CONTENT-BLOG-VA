@@ -18,7 +18,7 @@
 			</div>
 
 			<div>
-        <a href="destinos" class="btn-tercero btn-lg mt-5">Volver a todos los Destinos</a>
+        <a href="destinos" class="btn-tercero btn btn-lg mt-5">Volver a todos los Destinos</a>
       </div>
 
 		</article>
