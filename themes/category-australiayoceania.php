@@ -1,9 +1,9 @@
 <?php get_header() ?>
-<?php get_template_part('_includes/header', 'principal') ?>
 
-    <section class="my-5 container mt-5">
+
+    <section class="my-5 container mt-5">s
     <?php if (have_posts()) { ?>
-      <h2 class="text-center mb-5 mt-5"><?php single_term_title(); ?></h2>
+      <h2 class="text-center mb-5 mt-5">Elige tu destino en: <?php single_term_title(); ?></h2>
         <?php while ( have_posts() ) { the_post(); ?>
             <article class="my-5">
                 <div class="text-center my-3">

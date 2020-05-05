@@ -10,7 +10,8 @@
 
                 <?php $arg = array(
                     'post_type'     => 'post',
-                     'posts_per_page' => -1
+                     'posts_per_page' => 4,
+                     'paged'             => $paged
                       );
 
                  $get_arg = new WP_Query( $arg );
@@ -32,13 +33,15 @@
                       <p><?php the_tags( '<span class="text-orange">#</span>', ' <span class="text-orange">#</span>', '' ); ?></p>
                      <p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero btn my-3">Ver entrada</a></p>
                      </div>
-                   
+                     
                 
                     </div>
-
+                    
 
                 </article>
+             
                 <?php } wp_reset_postdata(); ?>
+                <?php the_pagination( $get_arg ); ?>
                 <div>
      <a href="<?php echo get_home_url()?>" class="btn-secundario btn btn-lg mt-5">Volver al inicio</a>
    </div>

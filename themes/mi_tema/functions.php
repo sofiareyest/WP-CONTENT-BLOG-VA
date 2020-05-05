@@ -39,3 +39,15 @@ if ( version_compare( $GLOBALS['wp_version'], $theme_options['wp_min_version'], 
  * @version 1.0
  */
 // remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+
+function add_cpt_to_loop( $query ) {
+	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+	 
+	// Get all your post types
+	$post_types = get_post_types();
+	 
+	$query->set( 'post_type', $post_types );
+	return $query;
+	}
+	}
+	add_filter( 'pre_get_posts', 'add_cpt_to_loop' );

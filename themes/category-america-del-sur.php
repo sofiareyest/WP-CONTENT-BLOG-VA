@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php get_template_part('_includes/header', 'principal') ?>
+
 
     <section class="my-5 container mt-5">
     <?php if (have_posts()) { ?>
