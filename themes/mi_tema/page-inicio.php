@@ -73,7 +73,9 @@
 
              <?php $arg = array(
              'post_type'     => 'slider',
-            'posts_per_page' => 3
+            'posts_per_page' => -1,
+            'orderby' => 'rand'
+
                  );
                 $get_arg = new WP_Query( $arg );
                 while ( $get_arg->have_posts() ) {
@@ -82,10 +84,7 @@
               <div class="carousel-item <?php if ( $get_arg->current_post == 0 ) : ?>active<?php endif; ?>">
              <?php the_post_thumbnail('carousel-img', array('class' => 'd-block w-100 h-auto')); ?>
               </div>
-             <?php } wp_reset_postdata(); ?>
-               </div>
-
-             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
                  </a>
@@ -93,6 +92,10 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                   </a>
+             <?php } wp_reset_postdata(); ?>
+               </div>
+
+            
                                 
           </div>
          

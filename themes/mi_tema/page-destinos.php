@@ -11,7 +11,8 @@
                 <?php $arg = array(
                     'post_type'     => 'post',
                      'posts_per_page' => 4,
-                     'paged'             => $paged
+                     'paged'             => $paged,
+                     'orderby' => 'rand',
                       );
 
                  $get_arg = new WP_Query( $arg );
@@ -41,7 +42,9 @@
                 </article>
              
                 <?php } wp_reset_postdata(); ?>
-                <?php the_pagination( $get_arg ); ?>
+             
+			<?php the_pagination( $get_arg ); ?>
+		
                 <div>
      <a href="<?php echo get_home_url()?>" class="btn-secundario btn btn-lg mt-5">Volver al inicio</a>
    </div>

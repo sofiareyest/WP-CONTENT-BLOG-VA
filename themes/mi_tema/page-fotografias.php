@@ -26,8 +26,9 @@
                         <div class="text-center col-12 mt-4">
 
                         <h2><?php the_title() ?></h2>
+                        <h4><?php the_category(' '); ?></h4>
                         <p><?php the_tags( '<span class="text-orange">#</span>', ' <span class="text-orange">#</span>', '' ); ?></p>
-
+                        <h3>Tomada con: <?php the_field('camara'); ?></h3>
                         </div>
                     </article>
                     <?php } wp_reset_postdata(); ?>

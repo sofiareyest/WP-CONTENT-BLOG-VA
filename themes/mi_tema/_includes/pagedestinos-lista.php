@@ -4,7 +4,7 @@
                         <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/africa">Africa</a>
                         <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/asia">Asia</a>
                         <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/australiayoceania">Australia & Oceania</a>
-                        <a class="btn-principal btn main__lista-item " href="#<?php bloginfo('url') ?>/category/europa">Europa</a>
+                        <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/europa">Europa</a>
                         <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/america-del-norte">America del norte</a>
                         <a class="btn-principal btn main__lista-item " href="<?php bloginfo('url') ?>/category/america-del-sur">America del sur</a>
 

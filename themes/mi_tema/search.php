@@ -3,7 +3,7 @@
     <section class="main">
 		<div class="main__container">
     <?php if (have_posts()) { ?>
-      <h2 class="text-center mb-5">Buscando : <?php echo esc_html(get_search_query(false)); ?></h2>
+      <h2 class="text-center mb-5 mt-5">Buscando : <?php echo esc_html(get_search_query(false)); ?></h2>
         <?php while ( have_posts() ) { the_post(); ?>
 			<article class="row entrada text-left my-4 mb-4">
 
@@ -17,7 +17,7 @@
 		<h4><?php the_category(' '); ?></h4>
 		<p><?php the_excerpt(); ?></p>
  		 <p><?php the_tags( '<span class="text-orange">#</span>', ' <span class="text-orange">#</span>', '' ); ?></p>
- 		<p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero my-3">Ver entrada</a></p>
+ 		<p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero btn my-3">Ver entrada</a></p>
  		</div>
 
 
@@ -28,7 +28,10 @@
         <?php }; ?>
     <?php } else { ?>
         <!-- Content -->
-        <h2 class="text-center mb-5">No hay elementos</h2>
+        <h2 class="text-center mb-5 mt-5">No hay elementos</h2>
+		</div>
+            <a href="<?php echo get_home_url()?>" class="btn-secundario btn mt-5 mb-5">Volver al inicio</a>
+        </div>
     <?php } wp_reset_query(); ?>
 	</div>
 	</section>

@@ -11,7 +11,8 @@
               <?php $arg = array(
                     'post_type'     => 'tips',
                      'posts_per_page' => 4,
-                     'paged'             => $paged
+                     'paged'             => $paged,
+                     'orderby' => 'rand'
                       );
 
                  $get_arg = new WP_Query( $arg );
@@ -32,7 +33,7 @@
 <h4><?php the_category(' '); ?></h4>
 <p><?php the_excerpt(); ?></p>
   <p><?php the_tags( '<span class="text-orange">#</span>', ' <span class="text-orange">#</span>', '' ); ?></p>
- <p class="text-center text-md-left"><a href="<?php bloginfo('url') ?>/single/tips" class="btn-tercero btn my-3">Ver entrada</a></p>
+ <p class="text-center text-md-left"><a href="<?php the_permalink(); ?>" class="btn-tercero btn my-3">Ver entrada</a></p>
  </div>
 
 
